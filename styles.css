@@ -1,0 +1,39 @@
+:root {
+  --gg-pink: #FF4FB6;
+  --gg-cream: #FFF1B2;
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--gg-cream);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #222;
+}
+#map { height: 100vh; width: 100vw; }
+.leaflet-popup-content-wrapper { border-radius: 12px; }
+.leaflet-popup-content a.gg-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--gg-pink);
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #00000010;
+}
+.leaflet-popup-content a.gg-btn:focus { outline: 2px solid #000; }
+.gg-logo {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  border: 3px solid var(--gg-pink);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  background: var(--gg-cream);
+  object-fit: cover;
+}
+.leaflet-top.leaflet-left .leaflet-control.gg-logo-ctl {
+  margin: 12px 0 0 12px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
